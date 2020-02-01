@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParse = require('body-parser');
 const cors = require('cors');
+const axios = require('axios');
 
 
 const PORT = 3000;
@@ -21,6 +22,11 @@ app.post('/citas', function(req,res){
     console.log(req.body);
     res.status(200).send({"message": "Data Received"});
 })
+app.get('/citas?=', function(req,res){
+    console.log(req.body);
+    res.status(200).send({"message": "Data Received"});
+})
+
 
 app.listen(PORT, function(){
     console.log("Server runing local" + PORT);

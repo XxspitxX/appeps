@@ -10,7 +10,7 @@ import { DefaultModule } from './layouts/default/default.module';
  import {NgbModule, NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
  import { FormsModule } from '@angular/forms';
 import { FormulariosComponent } from './Pages/AsignarCitas/formularios/formularios.component';
-import { PostsComponent } from './modules/posts/posts.component';
+
 
  
 @NgModule({

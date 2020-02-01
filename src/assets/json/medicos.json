@@ -1,10 +1,23 @@
 [
 {
     
-"Nombres": "Jenny Paola",
-"Apellidos": "Gonzáles Cruz",
-"Fecha": "Mie 26/02/2020"
-
+"Nombre": "Jenny Paola",
+"Apellido": "Gonzáles Cruz",
+"Fecha": "Mie 26/02/2020",
+"hora" : [
+    {
+        "hora":"1:10 PM"
+    },
+    {
+        "hora":"1:10 PM"
+    },
+    {
+        "hora":"1:10 PM"
+    },
+    {
+        "hora":"1:10 PM"
+    }
+]
 }
 ]
 

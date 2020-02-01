@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DefaultComponent } from './default.component';
 
 import { RouterModule } from '@angular/router';
-import { PostsComponent } from 'src/app/modules/posts/posts.component';
+
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule,
    MatDividerModule,
@@ -16,7 +16,9 @@ import { MatSidenavModule,
      MatFormFieldModule,
      MatAutocompleteModule,
      MatSelectModule,
-     MatButtonModule} from '@angular/material';
+     MatButtonModule,
+     MatSnackBarModule}
+      from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CitasComponent } from '../../Pages/AsignarCitas/citas/citas.component';
 import { SolicitudMedicoComponent } from 'src/app/Pages/solicitud-medico/solicitud-medico.component';
@@ -28,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     DefaultComponent,
     CitasComponent,
-    PostsComponent,
+    
     SolicitudMedicoComponent
   ],
   imports: [
@@ -49,7 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSelectModule,
     MatButtonModule,
      FormsModule,
-     HttpClientModule
+     HttpClientModule,
+     MatSnackBarModule
   ],
   providers: [
     CitasComponent

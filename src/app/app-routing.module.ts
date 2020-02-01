@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import {CitasComponent } from './Pages/AsignarCitas/citas/citas.component';
-import { PostsComponent } from './modules/posts/posts.component';
+
+import { SolicitudMedicoComponent } from './Pages/solicitud-medico/solicitud-medico.component';
 
 const routes: Routes = [{
   path: '',
@@ -11,8 +12,8 @@ const routes: Routes = [{
     path: '',
     component: CitasComponent
   }, {
-    path: 'posts',
-    component: PostsComponent
+    path: 'SolicitarMedico',
+    component: SolicitudMedicoComponent
   },
 
 ]
