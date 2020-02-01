@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "Nombre" : "Kristian Camilo ",
+    "Apellido": "Espitia Rodriguez",
+    "Cedula": "9999999",
+    "Sexo" : "Masculino",
+    "Edad" : 19,
+    "Eps": "Bizagi",
+    "Direccion": "Dirección: CARREA 29 31 53",
+    "PuntoO" : "Bogota",
+    "PuntoG" : "Hospital",
+    "Categoria" :"A"
+}
+

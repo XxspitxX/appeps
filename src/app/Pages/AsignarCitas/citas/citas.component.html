@@ -1,0 +1,80 @@
+<mat-card class="card_info">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{Usuario.Apellido}},</mat-card-title>
+        <mat-card-subtitle>{{Usuario.Nombre}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="info-user">
+        <div class="info-user1">
+            <h6>Nro de Cedula Ciudadania (C):</h6>
+             <mat-card-subtitle>{{Usuario.Cedula}}</mat-card-subtitle>
+        </div>
+           <div class="info-user2">
+            <h6>Sexo:</h6>
+            <mat-card-subtitle>{{Usuario.Sexo}}</mat-card-subtitle>
+           </div>
+           <div class="info-user3">
+            <h6>Edad:</h6>
+            <mat-card-subtitle>{{Usuario.Edad}}</mat-card-subtitle>  
+           </div>
+           <div class="info-user4">
+            <h6>Entidad:</h6>
+            <mat-card-subtitle>{{Usuario.Eps}}</mat-card-subtitle>  
+           </div>
+           <div class="info-user5">
+            <h6>Categoria:</h6>
+            <mat-card-subtitle>{{Usuario.Categoria}}</mat-card-subtitle>  
+           </div>
+           <div class="info-user6">
+            <h6>Direccion:</h6>
+            <mat-card-subtitle>{{Usuario.Direccion}}</mat-card-subtitle>  
+           </div>
+           <div class="info-user7">
+            <h6>Prestador odontológico:</h6>
+            <mat-card-subtitle>{{Usuario.PuntoO}}</mat-card-subtitle>  
+           </div>
+           <div class="info-user8">
+            <h6>Unidad de atención:</h6>
+            <mat-card-subtitle>{{Usuario.PuntoG}}</mat-card-subtitle>  
+           </div>
+         
+        </div>
+      </mat-card-content>
+     
+</mat-card>
+<mat-card class="card_table">
+   <div class="title">
+     <h2>Citas Medicas</h2>
+   </div>
+   <div class="contenedor">
+   <form #citamedica="ngForm" (ngSubmit)="onSubmit();" novalidate >
+
+      <hr/>
+
+    <mat-form-field class="grid-1">
+      <input #fecha="ngModel" matInput required [matDatepicker]="picker" placeholder="Fecha" name="fecha" [(ngModel)]="cita.fecha">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Sucursal</mat-label>
+      <mat-select [(ngModel)]="cita.sucursal" name="sucursal" #sucursal="ngModel" required> 
+        
+        <mat-option  *ngFor="let sucur of Sucursales" [value]="sucur" >
+          {{sucur.sucursal}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+   
+    <button [disabled]="citamedica.form.invalid ||topicHasError " type="submit" mat-raised-button color="primary" class="btn-submit" type="submit">Primary</button>
+    
+  </form>
+   
+
+   </div>
+  
+
+</mat-card>
+
+

@@ -1,0 +1,13 @@
+ul li {
+  list-style: none;
+}
+
+.IconMenu{
+  display: none;
+}
+
+@media screen and (max-width : 700px){
+  .IconMenu {
+    display: inline;
+  }
+}
