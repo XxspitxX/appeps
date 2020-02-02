@@ -26,4 +26,10 @@ mat-card-title{
    .mat-elevation-z8{
        width: 100%;
    }
+
+   @media (max-width: 768) {
+    .mat-elevation-z8{
+        width: 100%;
+    }
+   }
 }

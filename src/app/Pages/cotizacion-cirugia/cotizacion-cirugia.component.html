@@ -1,20 +1,82 @@
-<div class="form-group">
-  <label class="control-label dash-control-label col-xs-3">Category:</label>
-  <div class="col-xs-9">
-    <select [(ngModel)]="mainCategory">
-      <option disabled [ngValue]="null">-/-</option>
-      <option [ngValue]="category" *ngFor="let category of mainGroups">{{category.title}}</option>
-    </select>
-  </div>
-</div>
 
-<!--Subcategory-->
-
-<div class="form-group">
-  <label class="control-label dash-control-label col-xs-3">Sub category:</label>
-  <div class="col-xs-9">
-    <select [(ngModel)]="subCategory">
-      <option [ngValue]="subcategory" *ngFor="let subcategory of filterSubById(mainCategory.id)">{{subcategory.title}}</option>
-    </select>
+<mat-card class="card_info">
+  <mat-card-content>
+    <div class="header">
+      <h1>Cotizar Cirugía
+      </h1>
   </div>
-</div>
+  <div class="info">
+    <p>Apreciado Médico a través del formulario adjunto podrá cotizar sus Procedimientos o Cirugías.  Si desea atención personalizada puede contactarnos:
+
+      3106300963 –  3672600 Ext. 7816
+     
+    </p>
+    <p>
+      Gracias por confiar en nosotros.
+    </p>
+  </div>
+  <div class="contenedor">
+    <form  #data="ngForm" novalidate  (ngSubmit)="onSubmit(data,mainCategory,subCategory)">
+     <div class="grid-master">
+      <mat-form-field class="grid1">
+      <input name="nombre" #name="ngModel" [(ngModel)]="datos.nombre" matInput placeholder="Nombre" required>
+      </mat-form-field>
+      <mat-form-field class="grid2">
+      <input name="Apellidos" #Apellidos="ngModel" [(ngModel)]="datos.Apellidos" matInput placeholder="Apellidos" required >
+      </mat-form-field>
+      <mat-form-field  class="grid1">
+      <mat-label>Tipo de Documento</mat-label>
+      <mat-select name="tdocumento" #tdocumento="ngModel" [(ngModel)]="datos.documento" required>
+        <mat-option  *ngFor="let tipo of tipo" [value]="tipo.value" >
+          {{tipo.viewValue}}
+        </mat-option>
+      </mat-select>
+      </mat-form-field>
+      <mat-form-field class="grid2">
+      <input name="numero" #numero="ngModel" [(ngModel)]="datos.numero"   matInput placeholder="Numero De Documento " required>
+      </mat-form-field>
+      <mat-form-field class="grid1"> 
+      <input  name="fecha" #fecha="ngModel" [(ngModel)]="datos.fecha"  matInput [matDatepicker]="picker"  placeholder="Fecha Tentativa de Cirugía"  required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="grid2">
+      <input  name="hora" #hora="ngModel" [(ngModel)]="datos.hora"  matInput type="" placeholder="Hora de aproximada de Cirugía">
+      </mat-form-field>
+      <mat-form-field class="grid1">
+      <input  name="direccion" #direccion="ngModel" [(ngModel)]="datos.direccion"  matInput  placeholder="Dirección" >
+      </mat-form-field>
+      <mat-form-field class="grid2" >
+      <input   name="direccionc" #direccionc="ngModel" [(ngModel)]="datos.direccionc"   matInput  placeholder="Complemento Dirección" >
+      </mat-form-field>
+      <mat-form-field  class="grid1">
+      <mat-label>Procedimientos quirúrgicos
+      </mat-label>
+      <mat-select name="procedimientosa" #procedimientosa="ngModel"  [(ngModel)]="datos.procedimientosa" [(ngModel)]="mainCategory"  required>
+      <mat-option *ngFor="let category of mainGroups" [value]="category"> 
+        {{category.title}}
+      </mat-option>
+      </mat-select>
+      </mat-form-field>
+      <mat-form-field
+      class="grid2">
+      <mat-label>Categoria de procedimiento
+      </mat-label>
+      <mat-select  name="procedimientosb" #procedimientosb="ngModel" [(ngModel)]="datos.procedimientosb" [(ngModel)]="subCategory "  required>
+      <mat-option *ngFor="let subcategory of filterSubById(mainCategory.id)" [value]="subcategory">
+        {{subcategory.title}}
+      </mat-option>
+      </mat-select>
+      </mat-form-field>
+      <mat-form-field class="grid3">
+      <textarea  name="descripcion" #descripcion="ngModel" [(ngModel)]="datos.descripcion" matInput required  placeholder="Breve descripcion"></textarea>
+      </mat-form-field>
+    
+      
+    </div>
+    <button [disabled]="data.form.invalid ||topicHasError "  mat-raised-button color="primary" class="btn-submit"  type="submit" >Enviar Cotización</button>
+    </form>
+  </div>
+  </mat-card-content>
+
+</mat-card>
