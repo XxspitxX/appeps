@@ -43,6 +43,6 @@
     margin: 8px;
   }
   :host .btn-submit {
-    width: 40%;
+    width: auto;
   }
 }

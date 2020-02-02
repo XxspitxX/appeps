@@ -1,0 +1,59 @@
+[
+{   
+    "Nombre": "Neurocirugia",
+    "Procedimiento" : [
+        {
+            "id" : 1,
+            "Proc":"Cirugía Estereotaxia (biopsias, cirugía para movimientos anormales)"
+        },
+        {
+            "id" : 2,
+            "Proc":"Tumores Cerebrales"
+        },
+        {
+            "id" : 3,
+            "Proc":"Hematomas Cerebrales"
+        },
+        {
+            "id" : 4,
+            "Proc":"Aneurismas"
+        },
+        {
+            "id" : 5,
+            "Proc":"Hernia de Disco"
+        }
+       
+    
+    ]
+},
+{
+    
+    "Nombre": "Neurocirugia",
+    "Procedimiento" : [
+        {
+            "id" : 1,
+            "Proc":"Cirugía Estereotaxia (biopsias, cirugía para movimientos anormales)"
+        },
+        {
+            "id" : 2,
+            "Proc":"Tumores Cerebrales"
+        },
+        {
+            "id" : 3,
+            "Proc":"Hematomas Cerebrales"
+        },
+        {
+            "id" : 4,
+            "Proc":"Aneurismas"
+        },
+        {
+            "id" : 5,
+            "Proc":"Hernia de Disco"
+        }
+       
+    
+    ]
+}
+
+
+] 

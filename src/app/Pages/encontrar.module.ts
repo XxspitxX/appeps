@@ -8,6 +8,8 @@ import {CitasComponent } from './AsignarCitas/citas/citas.component'
 import { HighchartsChartModule } from 'highcharts-angular';
 import { SolicitudComponent } from './solicitud-medico/solicitud/solicitud.component';
 import {SolicitudMedicoComponent} from './solicitud-medico/solicitud-medico.component';
+import { CotizacionCirugiaComponent } from './cotizacion-cirugia/cotizacion-cirugia.component';
+import { ConsultarMedicosComponent } from './consultar-medicos/consultar-medicos.component';
 
 
 
@@ -15,7 +17,9 @@ import {SolicitudMedicoComponent} from './solicitud-medico/solicitud-medico.comp
   declarations: [
     CitasComponent,
     SolicitudComponent,
-    SolicitudMedicoComponent
+    SolicitudMedicoComponent,
+    CotizacionCirugiaComponent,
+    ConsultarMedicosComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,198 @@
+[
+	{
+		"Nombre": "Álvaro José Pérez",
+		"Especialidad": "Geriatría",
+		"Hospital" : "Engativa",
+		"Telefono" : "4066001"
+	},
+	{
+		"Nombre": "Jenny Rojas Arango",
+		"Especialidad" : "Geriatría",
+		"Hospital" : "Chapinero" ,
+		"Telefono" : "2035963"
+	},
+	{
+	"Nombre": "Wilson Tarazona Paez",
+		"Especialidad": "Geriatría",
+		"Hospital" : "Restrepo",
+		"Telefono" : "5209815"
+	},
+	{
+		
+		"Nombre": "Carlos julio ",
+		"Especialidad": "Odontología", 
+		"Hospital" : "Hospital Restrepo",
+		"Telefono" : "454656466"
+	},
+	{
+		"Nombre": "Carlos julio ",
+		"Especialidad": "Odontología", 
+		"Hospital" : "Hospital Restrepo",
+		"Telefono" : "454656466"
+	},
+	{
+		"Nombre": "Andrea González Cruz",
+		"Especialidad": "Neumología",
+		"Hospital" :  "Fontibón",
+		"Telefono" : "3027289"
+	},
+	{
+		"Nombre": "Felipe Maldonado",
+		"Especialidad": "Neumología",
+		"Hospital" :"Usme",
+		"Telefono" : "7279092"
+	},
+	{
+		"Nombre":" Ana María Romero ",
+		"Especialidad": "Neumología",
+		"Hospital" : "Ciudad Bolivar",
+		"Telefono" : "2269106"
+	},
+	{
+		"Nombre": "Henry Mora",
+		"Especialidad": "Nutriologia" ,
+		"Hospital" : "Suba",
+		"Telefono" : "89276290"
+	},
+	{
+		"Nombre": "Carmen Mendez ",
+		"Especialidad": "Nutriologia",
+		"Hospital" : "Restrepo",
+		"Telefono" : "9762579"
+	},
+	{
+		"Nombre": "Angélica Prieto Bernal ",
+		"Especialidad":" Nutriologia",
+		"Hospital" : "Chapinero ",
+		"Telefono" : "728,8289"
+	},
+	{
+		"Nombre": "Patricia Quintana",
+		"Especialidad": "Proctologia",
+		"Hospital" : "Fontibón",
+		"Telefono" : "7382063"
+	},
+	{
+		"Nombre": "Lucía Sabogal"  ,
+		"Especialidad": "Proctologia",
+		"Hospital" : "Chapinero ",
+		"Telefono" : "4737190"
+	},
+	{
+		"Nombre": "Daniela Suárez Olaya",
+		"Especialidad": "Proctologia",
+		"Hospital" : "Engativa",
+		"Telefono" : "628386"
+	},
+	{
+		"Nombre": "Jorge Riaño ",
+		"Especialidad": "Pediátria",
+		"Hospital" : "Usme",
+		"Telefono" :  "5277282"
+	},
+	{
+		"Nombre": "Manuel Castro ",
+		"Especialidad": "Pediatría",
+		"Hospital" : "Ciudad Bolivar",
+		"Telefono" : "3727828"
+	},
+	{
+		"Nombre": "Rubí Palacios",
+		"Especialidad": "Pediatría",
+		"Hospital" : "Restrepo ",
+		"Telefono" : "9362792"
+	},
+	{
+		"Nombre": "Diana Gutiérrez",
+		"Especialidad": "Urología",
+		"Hospital" : "Engativa",
+		"Telefono" : "7271818"
+	},
+	{
+		"Nombre":" Denisse Lopez",
+		"Especialidad": "Urología",
+		"Hospital" : "Chapinero",
+		"Telefono" : "7372882"
+	},
+	{
+		"Nombre": "Angelina Torres",
+		"Especialidad": "Urología",
+		"Hospital" : "Fontibón",
+		"Telefono" : "2737288"
+	},
+	{
+		"Nombre": "Saraí Pachón",
+		"Especialidad": "Cardiólogia",
+		"Hospital" : "Usme",
+		"Telefono" :  "8281963"
+	},
+	{
+		"Nombre": "Lesly Alvarez",
+		"Especialidad": "Cardiólogia",
+		"Hospital" :" Ciudad Bolivar",
+		"Telefono" : "8372640"
+	},
+	{
+		"Nombre": "Jineth Carrillo",
+		"Especialidad": "Cardiología",
+		"Hospital" :"Suba",
+		"Telefono" : "6443578"
+	},
+	{
+		"Nombre": "Melanie Camargo",
+		"Especialidad": "Otorrinolaringología",
+		"Hospital" : "Restrepo",
+		"Telefono" : "5334667"
+	},
+	{
+		"Nombre": "Duvan Rodríguez",
+		"Especialidad": "otorrinolaringología",
+		"Hospital" : "Engativa",
+		"Telefono" : "3244678"
+	},
+	{
+	"Nombre": "Luis Velazquez",
+		"Especialidad": "otorrinolaringología",
+		"Hospital" : "Fontibón",
+		"Telefono" : "2557889"
+	},
+	{
+		"Nombre": "Mauricio Reyes",
+		"Especialidad":" Estomatología",
+		"Hospital" : "Suba",
+		"Telefono" : "7382829"
+	},
+	{
+		"Nombre": "Flor Mendieta ",
+		"Especialidad": "Estomatología",
+		"Hospital" : "Ciudad Bolivar",
+		"Telefono" :" 6372829"
+	},
+	{
+		"Nombre": "Gladys Vargas ",
+		"Especialidad":" Estomatología",
+		"Hospital" :" Usme",
+		"Telefono" : "6382882"
+	},
+	{
+		"Nombre":  "Claudia Molina",
+		"Especialidad": "Odontología",
+		"Hospital" : "Restrepo",
+		"Telefono" : "7372883"
+	},
+	{
+		"Nombre": "Santiago Morales",
+		"Especialidad": "Odontología",
+		"Hospital" : "Engativa",
+		"Telefono" : "5545656"
+	},
+	{
+		"Nombre": "Victor Cortés",
+		"Especialidad": "Odontología",
+		"Hospital" : "Usme",
+		"Telefono" : "6372864"
+	}
+
+
+
+]

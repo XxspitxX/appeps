@@ -33,13 +33,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { SolicitudComponent } from '../../Pages/solicitud-medico/solicitud/solicitud.component';
+import { CotizacionCirugiaComponent } from 'src/app/Pages/cotizacion-cirugia/cotizacion-cirugia.component';
+import { ConsultarMedicosComponent } from 'src/app/Pages/consultar-medicos/consultar-medicos.component';
 
 @NgModule({
   declarations: [
     DefaultComponent,
     CitasComponent,
     SolicitudMedicoComponent,
-    SolicitudComponent
+    SolicitudComponent,
+    CotizacionCirugiaComponent,
+    ConsultarMedicosComponent
   ],
   imports: [
     CommonModule,
