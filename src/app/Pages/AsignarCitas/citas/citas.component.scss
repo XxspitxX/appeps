@@ -2,18 +2,22 @@
 
   .card_info{
     width: 20%;
-    height: 100%;
+    height: 80%;
     float: left;
   }
   .card_table{
     width: 74%;
-    height: 100%;
+    height: 80%;
     float: right;
   }
   .example-header-image {
     background-image: url('../../../../assets/imagenes/anónimo.png');
     background-size: cover;
     
+  }
+  .example-button-row button{
+    margin-right: 8px;
+   
   }
 
   .info-user{
@@ -68,20 +72,45 @@
   .contenedor {
     display: flex;
     flex-direction: column;
-    margin:1rem auto;
+    margin:2rem auto;
     max-width: 600px;
 } 
 
     mat-form-field{
-    width: 60%;
+    width: 80%;
+    left: 10%;
       position: relative;
       margin-left: auto;
       margin-right: auto;
     
   }
 
- 
+ ul{
+   display: none;
+ }
+ .horas{
+   position: relative;
+   margin-left: auto;
+      margin-right: auto;
+      left: 14%;
+  
+ }
+ .content-list{
+   display: none;
+ }
 
+ .mostrarhoras{
+  
+   display: grid;
+   grid-template-columns: 100px 100px 100px 100px;
+   position: relative;
+    left: 10%;
+   grid-gap: 10px;
+   grid-auto-columns: minmax( auto);
+   padding: 5px;
+   
+   
+ }
 
   // Responsive
  
@@ -99,15 +128,26 @@
     height: 100%;
     float: right;
   }
-  .info-user{
-    display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax( auto);
-  padding: 5px;
-  position: absolute;
-  grid-template-rows: 100px 1fr;
 
+  mat-form-field{
+   display: grid;
+   margin-right: 50%;
+
+  }
+  .mostrarhoras{
+    
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    position: relative;
+     left: 15%;
+    grid-gap: 10px;
+    grid-auto-columns: minmax( auto);
+    padding: 5px;
+    
+    
+  }
+  .horas{
+    margin-right: 8px;
   }
   .info-user1 {
     grid-column: 1 / 3 ;
@@ -150,8 +190,22 @@
       float: left;
     }
     mat-form-field{
-      width: 100%;
+      display: grid;
+    }
+    .mostrarhoras{
       
+      display: grid;
+      grid-template-columns: 90px 90px 90px;
+      position: relative;
+       left: 15%;
+      grid-gap: 10px;
+      grid-auto-columns: minmax( auto);
+      padding: 5px;
+      
+      
+    }
+    .horas{
+      margin-top: 8px;
     }
     .card_table{
       width: 100%;
@@ -185,12 +239,28 @@
   @media (max-width : 768){
     .card_info{
       width: 100%;
-      height: 25%;
+      height: 30%;
       float: left;
     }
     mat-form-field{
       width: 100%;
       
+    }
+    .mostrarhoras{
+
+      display: grid;
+      
+      position: relative;
+       right: 25%;
+      grid-gap: 10px;
+      grid-auto-columns: minmax( auto);
+      padding: 5px;
+      
+      
+    }
+    .horas{
+      margin-right: 8px;
+      margin-top: 10px;
     }
     .card_table{
       width: 100%;
@@ -219,8 +289,31 @@
     .info-user6 {
       display: none;
     }
+   
    }
-  
+   @media (max-width : 400px){
+    .card_info{
+      width: 100%;
+      height: 30%;
+      float: left;
+    }
+    .horas{
+      margin-right: 8px;
+      margin-top: 10px;
+    }
+    .mostrarhoras{
+      
+      display: grid;
+      grid-template-columns: 90px 90px;
+      position: relative;
+      right: 10%;
+      grid-gap: 10px;
+      grid-auto-columns: minmax( auto);
+      padding: 5px;
+      
+      
+    }
+   }
   
 }
 

@@ -22,10 +22,7 @@ app.post('/citas', function(req,res){
     console.log(req.body);
     res.status(200).send({"message": "Data Received"});
 })
-app.get('/citas?=', function(req,res){
-    console.log(req.body);
-    res.status(200).send({"message": "Data Received"});
-})
+
 
 
 app.listen(PORT, function(){

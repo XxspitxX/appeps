@@ -48,7 +48,7 @@
      <h2>Citas Medicas</h2>
    </div>
    <div class="contenedor">
-   <form #citamedica="ngForm"  #medico="ngForm" (ngSubmit)="onSubmit();" novalidate >
+   <form #citamedica="ngForm"  #medico="ngForm" (ngSubmit)="onSubmit(citamedica, medico); " novalidate >
 
       <hr/>
 
@@ -67,26 +67,31 @@
       </mat-select>
     </mat-form-field>
     <mat-form-field>
+      <mat-label>Especialidad</mat-label>
+      <mat-select [(ngModel)]="cita.especialidad" name="especialidad" #especialidad="ngModel" required> 
+        
+        <mat-option  *ngFor="let espe of Especialidades" [value]="espe" >
+          {{espe.Especialidad}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
       <mat-label>Medicos</mat-label>
-      <mat-select  required> 
+      <mat-select name="medicos" #medicos="ngModel" [(ngModel)]="cita.medicos" (selectionChange)="onMostrar()" name="medicos" required> 
         
         <mat-option  *ngFor="let medicos of  Medico" [value]="medicos" >
           {{medicos.Nombre }} {{medicos.Apellido}}
         </mat-option>
-      </mat-select>
+      </mat-select  >
     </mat-form-field>
-
-    <ul>
-      <li *ngFor="let medicos of Medico;let i = index">{{i + 1}}-{{medicos.hora}}</li>
-    </ul>
-    
-    
-    <button [disabled]="citamedica.form.invalid ||topicHasError " type="submit" mat-raised-button color="primary" class="btn-submit" type="submit">Primary</button>
-   
-    <ul>
+    <div class=" mostrarhoras" hidden="true" id="mostrar" *ngFor="let medicos of Medico">
       
-    </ul>
-
+      <button mat-raised-button color="primary" class="horas" type="button"
+            *ngFor="let hora of medicos.Horas" [value]="hora">{{hora.hora}}</button>
+        
+          </div>
+    
+    <button [disabled]="citamedica.form.invalid ||topicHasError " type="submit" mat-raised-button color="primary" class="btn-submit" type="submit">Agendar Cita</button>
   </form>
    
     

@@ -4,19 +4,26 @@
 "Nombre": "Jenny Paola",
 "Apellido": "Gonzáles Cruz",
 "Fecha": "Mie 26/02/2020",
-"hora" : [
+"Horas" : [
     {
         "hora":"1:10 PM"
     },
     {
-        "hora":"1:10 PM"
+        "hora":"1:20 PM"
     },
     {
-        "hora":"1:10 PM"
+        "hora":"1:40 PM"
     },
     {
-        "hora":"1:10 PM"
+        "hora":"2:10 PM"
+    },
+    {
+        "hora":"2:30 PM"
+    },
+    {
+        "hora":"2:50 PM"
     }
+
 ]
 }
 ]

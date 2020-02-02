@@ -25,6 +25,9 @@ import { SolicitudMedicoComponent } from 'src/app/Pages/solicitud-medico/solicit
 
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
      FormsModule,
      HttpClientModule,
-     MatSnackBarModule
+     MatSnackBarModule,
+     BrowserAnimationsModule,
+     ToastrModule.forRoot()
   ],
   providers: [
     CitasComponent

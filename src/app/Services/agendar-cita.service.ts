@@ -18,8 +18,5 @@ export class AgendarCitaService {
   getmedicos(){
    return this._http.get<any>("../../assets/json/medicos.json");
   }
-  citaget(){
-    return this._http.get<any>(this._url);
 
-  }
 }
