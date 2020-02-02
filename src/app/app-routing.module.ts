@@ -4,6 +4,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import {CitasComponent } from './Pages/AsignarCitas/citas/citas.component';
 
 import { SolicitudMedicoComponent } from './Pages/solicitud-medico/solicitud-medico.component';
+import { SolicitudComponent } from './Pages/solicitud-medico/solicitud/solicitud.component';
 
 const routes: Routes = [{
   path: '',
@@ -13,8 +14,12 @@ const routes: Routes = [{
     component: CitasComponent
   }, {
     path: 'SolicitarMedico',
-    component: SolicitudMedicoComponent
-  },
+    component: SolicitudMedicoComponent,
+  },{
+      path: 'Solicitud',
+      component: SolicitudComponent
+  }
+ 
 
 ]
 }];

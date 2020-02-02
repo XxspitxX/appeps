@@ -6,13 +6,16 @@ import { RouterModule } from '@angular/router';
 import {CitasComponent } from './AsignarCitas/citas/citas.component'
 
 import { HighchartsChartModule } from 'highcharts-angular';
+import { SolicitudComponent } from './solicitud-medico/solicitud/solicitud.component';
+import {SolicitudMedicoComponent} from './solicitud-medico/solicitud-medico.component';
 
 
 
 @NgModule({
   declarations: [
-    CitasComponent
-    
+    CitasComponent,
+    SolicitudComponent,
+    SolicitudMedicoComponent
   ],
   imports: [
     CommonModule,

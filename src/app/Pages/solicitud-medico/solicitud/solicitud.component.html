@@ -1,0 +1,65 @@
+<mat-card>
+<mat-card-content>
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+      <mat-step [stepControl]="firstFormGroup" >
+        <form #datos="ngForm" novalidate [formGroup]="firstFormGroup" >
+          <ng-template matStepLabel >Formulario</ng-template>
+          <div class="grid-master">
+          <mat-form-field class="grid1">
+            <input matInput placeholder="Nombre" required formControlName="firstCtrl">
+          </mat-form-field>
+          <mat-form-field class="grid2">
+            <input  matInput placeholder="Apellidos" required formControlName="firstCtrl">
+          </mat-form-field>
+          <mat-form-field  class="grid1">
+            <mat-label>Tipo de Documento</mat-label>
+            <mat-select formControlName="firstCtrl"required>
+              <mat-option *ngFor="let tipo of tipo" [value]="tipo.value" >
+                {{tipo.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="grid2">
+            <input   matInput placeholder="Numero De Documento "formControlName="firstCtrl" required>
+        </mat-form-field>
+        <mat-form-field class="grid1"> 
+          <input  matInput [matDatepicker]="picker"  placeholder="Fecha de Consulta" formControlName="firstCtrl" required>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field class="grid2">
+          <input  matInput type="" placeholder="Hora de Consulta" formControlName="firstCtrl">
+     </mat-form-field>
+           <mat-form-field class="grid1">
+      <input  matInput  placeholder="Dirección" required formControlName="firstCtrl">
+ </mat-form-field>
+   <mat-form-field class="grid2" >
+       <input    matInput  placeholder="Complemento Dirección"  formControlName="firstCtrl">
+      </mat-form-field>
+  <mat-form-field class="grid3">
+  <textarea   matInput required  placeholder="Breve descripcion de los síntomas que presenta"  formControlName="firstCtrl"></textarea>
+  </mat-form-field>
+        </div>
+        <button matStepperNext  mat-raised-button color="primary" class="btn-submit" type="button" >CONTINUAR</button>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Confirmación</ng-template>
+          <mat-radio-group formControlName="secondCtrl" (change)="radioChange()" required>
+            <mat-radio-button  > Pago en Efectivo</mat-radio-button>
+          </mat-radio-group>
+          <div class="alert" id="alert" style="display: none;">
+            <p>Paga en efectivo en el momento de la Consulta Médica.
+
+            </p>
+          </div>
+          <div>
+            <button mat-raised-button matStepperPrevious style="margin-right: 8px;">Atras</button>
+            <button mat-raised-button color="primary" (click)="stepper.reset();onSubmit()">Solicitar Medico</button>
+          </div>
+        </form>
+      </mat-step>
+    </mat-vertical-stepper>
+</mat-card-content>
+</mat-card>

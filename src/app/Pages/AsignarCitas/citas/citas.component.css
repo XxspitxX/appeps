@@ -102,6 +102,7 @@
     height: 100%;
     margin-top: 2%;
     float: left;
+    overflow: hidden;
   }
   :host .card_table {
     width: 75%;

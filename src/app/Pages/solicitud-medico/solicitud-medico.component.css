@@ -1,15 +1,16 @@
-.card_info {
+:host .card_info {
   width: 90%;
   height: 80%;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  color: #5f727f;
 }
-mat-card-title {
+:host mat-card-title {
   text-align: center;
 }
-.header {
+:host .header {
   color: #493083;
   font-weight: 400;
   line-height: 30px;
@@ -18,7 +19,7 @@ mat-card-title {
   top: 27px;
   padding-left: 10px;
 }
-.sub {
+:host .sub {
   color: #493083;
   font-weight: 400;
   line-height: 30px;
@@ -26,42 +27,86 @@ mat-card-title {
   padding: 10px;
   text-align: center;
 }
-.imp {
+:host .imp {
   font-weight: 300;
   color: #493083;
   font-size: 30px;
   line-height: 30px;
   padding-top: 10px;
 }
-p {
+:host p {
   color: #5f727f;
 }
-li {
+:host li {
   color: #5f727f;
   font-size: 15px;
 }
-.grid {
+:host .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 50% 50%;
   grid-auto-rows: minmax(auto);
   padding: 15px;
   margin: 2%;
 }
-.separator {
+:host .separator {
   border-right-width: 1px;
   position: relative;
   border-right-style: solid;
   top: 15px;
-  left: 5px;
+  padding-right: 40px;
   height: 100%;
 }
-.grid-1 {
+:host .grid-1 {
   grid-column: 1;
   grid-row: 1;
   grid-auto-rows: auto;
 }
-.grid-2 {
+:host .grid-2 {
   grid-column: 2;
   padding-left: 14px;
   margin-left: 20px;
+}
+@media (max-width: 1250px) {
+  :host .card_info {
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: #5f727f;
+  }
+}
+@media (max-width: 1000px) {
+  :host .card_info {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+  }
+  :host .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+  :host .separator {
+    border-right: none;
+    position: relative;
+  }
+  :host .grid-1 {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  :host .grid-2 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    position: relative;
+    right: 10%;
+    margin-right: 50px;
+  }
 }

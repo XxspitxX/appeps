@@ -7,8 +7,8 @@
          <div class="sub">
              <h3 >Consulta Medica Domiciliaria</h3>
          </div>
-     </mat-card-content>
-     <mat-divider></mat-divider>
+    
+    
      <div class="grid">
         <div class="grid-1 separator">
             <p class="imp">Información Importante</p>
@@ -20,22 +20,33 @@
                 <li>No atendemos emergencias ni situaciones en donde esté&nbsp; en riesgo la vida del usuario.</li>
                 <li>Nuestro Servicio es prestado por médicos generales.</li>
                 </ul>
+                
         
         </div>
-        <div class="grid-2">
+        <form class="grid-2" #form="ngForm" novalidate >
             <p class="imp">Encuesta de accesibilidad al servicio * </p>
             <p>Por favor confirma que el usuario del servicio cumple con las siguientes condiciones, las cuales son fundamentales para acceder a nuestra Consulta Médica Domiciliaria:
-
             </p>
-            <ul>
-                <li>Valor de la consulta&nbsp; $100.000 COP&nbsp; (por persona). Pago en efectivo, Tarjeta Débito y Tarjeta Crédito.</li>
-                <li>Atendemos únicamente en el perímetro urbano de Bogotá, Colombia.&nbsp;Consultar nuestra cobertura</li>
-                <li>El tiempo estimado de espera es entre 60 y 150 minutos, según el tráfico.</li>
-                <li>No atendemos emergencias ni situaciones en donde esté&nbsp; en riesgo la vida del usuario.</li>
-                <li>Nuestro Servicio es prestado por médicos generales.</li>
-                </ul>
+
+           
+            <section class="example-section">
+                <mat-checkbox [(ngModel)]="form.check1" name="check1" #check1="ngModel" required class="example-margin"> El usuario se encuentra estable
+                </mat-checkbox>
+               
+              </section>
+              <section class="example-section">
+                <mat-checkbox  [(ngModel)]="form.check2" name="check2" #check2="ngModel" required  class="example-margin">El usuario no esta en riesgo</mat-checkbox>
+              </section>
+              <section class="example-section">
+                <mat-checkbox [(ngModel)]="form.check3" name="check3" #check3="ngModel" required  class="example-margin"> El usuario es mayor de dos (2) años.
+                </mat-checkbox>
+              </section>
+              <button [disabled]="form.form.invalid ||topicHasError " mat-raised-button color="primary" routerLink="/Solicitud" >SOLICITAR CONSULTAR MÉDICA</button>
+            </form>
+
         
-        </div>
      </div>
 
+     
+ </mat-card-content>
 </mat-card>
